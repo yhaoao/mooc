@@ -108,6 +108,7 @@ def playGame(wordList):
             hand=dealHand(HAND_SIZE)
             option=None
             while not(option=='u' or option=='c'):
+                print 'Invalid command.'
                 option=raw_input('Enter u to have yourself play, c to have the computer play: u')
             if option=='u':
                 playHand(hand, wordList, HAND_SIZE)
